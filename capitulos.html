@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Capitulos</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+		
+		<div class="toggle"></div>
+			
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Personajes.html">Personajes</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+				
+			</ul>
+		
+	</header>
+    <script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header=document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY > 0);
+		});
+		</script>
+
+    <section class="wrapper">
+        <div id="Estrellas"></div>
+        <div id="Estrellas2"></div>
+        <div id="Estrellas3"></div>
+       <div id="Titulo">
+            <div class="ctx"><h1>Capitulos</h1></div>
+       </div>
+     <div>
+
+     </div>
+        <div id="menuim">
+            <div class="poti">
+                <div class="redes" id="redes1" ><a href="https://www.instagram.com/multiversound/"> <img src="insta.png" class="ima" id="ins"></a> </div>
+                <div class="redes" id="redes2" ><a href="https://open.spotify.com/user/31urgzgx6mqpjdik64mue7cv5whu"><img src="spoti.png" class="ima" id="spot"></a> </div>
+                <div class="redes" id="redes3" ><a href="https://www.tiktok.com/@multiversound"><img src="tiktok.png" class="ima" id="tik"></a> </div>
+                <div class="redes" id="redes4" ><a href="https://www.youtube.com/channel/UCVbiwotlswHl-mVd5R-Xpsw"><img src="youtube.png" class="ima" id="you"></a> </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

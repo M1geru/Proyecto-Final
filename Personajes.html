@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Personajes</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header >
+		
+		<div class="toggle"></div>
+			
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="capitulos.html">Capitulos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+				
+			</ul>
+		
+	</header>
+    <script type="text/javascript">
+		window.addEventListener('scroll',function(){
+			var header=document.querySelector('header');
+			header.classList.toggle('sticky',window.scrollY > 0);
+		});
+		</script>
+
+    <section class="wrapper">
+        <div id="Estrellas"></div>
+        <div id="Estrellas2"></div>
+        <div id="Estrellas3"></div>
+       <div id="Titulo">
+            <div class="ctx"><h1>Personajes</h1></div>
+       </div>
+        <div id="menuim">
+            <div class="poti">
+                <div class="items" id="item1"><button class="btn"><span>Goomo</span><svg> <rect x="0" y="0" fill="none"></rect></svg></button> </div>
+                <div class="items" id="item2"><button class="btn"><span>Kraptor</span><svg> <rect x="0" y="0" fill="none"></rect></svg></button> </div>
+                <div class="items" id="item3"> <button class="btn"><span>POOL-PO</span><svg> <rect x="0" y="0" fill="none"></rect></svg></button></div>
+                <div class="items" id="item3"> <button class="btn"><span>K900</span><svg> <rect x="0" y="0" fill="none"></rect></svg></button></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
