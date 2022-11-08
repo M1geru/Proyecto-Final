@@ -28,7 +28,7 @@ h2 {
 .grupo{
     display: flex;
     justify-content: space-between;
-    margin:100px;
+    margin:150px;
     flex-wrap: wrap;
 }
 #texto{
@@ -43,10 +43,10 @@ h2 {
     margin:100px;
 }
 .textBx h2{
-    font-size: 100px;
+    font-size: 80px;
 }
 .textBx span{
-    font-size: 50px;
+    font-size: 40px;
    
 }
 #video{
