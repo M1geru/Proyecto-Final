@@ -121,8 +121,8 @@ header .logo{
 .imga{
     display: flex;
     margin: auto;
-    width: 700px; 
-    height: 625px;
+    width: 419px; 
+    height: 419px;
     border-radius: 50%;
     animation: float 6s ease-in-out infinite;
 }
