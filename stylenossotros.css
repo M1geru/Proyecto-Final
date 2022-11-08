@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     scroll-behavior: smooth;
     
   }
@@ -10,10 +10,20 @@
     height: 100%;
    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
+a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: -1px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    
+}
 h1{
     color: #ffffff;
     text-align: center;
-    margin: 100px;
+    margin: 50px;
+    font-size: 75px;
 } 
 h2 {
     font-size: 3em;
@@ -82,10 +92,9 @@ header .logo{
 
 /*perfiles */
 .perfil{
-    position: relative;
-    display: flex;
-    
+    display: -webkit-box;
     margin: 40px;
+    flex-wrap: nowrap;
 }
 
     .fot{
@@ -96,18 +105,26 @@ header .logo{
       justify-items: left;
       
     }
-
+.cont{
+    position: relative;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid #41e6e6;
+   display: flex;
+}
 
 .argu{
     border-radius: 10px;         
-    background: rgb(255, 255, 255);      
-    border: 1px solid #000; 
+    background: rgb(255, 255, 255);  
+    border: 5px solid #000; 
     text-align: center;
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 10px;
+   
 }
 /*fin*/
 .contact {

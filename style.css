@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     scroll-behavior: smooth;
     
   }
@@ -20,22 +20,35 @@ h2 {
     line-height: 1.5em;
    
 }
-
+.secund {
+    font-size:30px;
+    font-weight: 700;
+    color: #23d6b8;
+}
 .grupo{
     display: flex;
     justify-content: space-between;
     margin:100px;
+    flex-wrap: wrap;
 }
 #texto{
     justify-items: center;
-  
+    justify-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .title .textBx{
     display: flex;
     margin:100px;
 }
-
+.textBx h2{
+    font-size: 100px;
+}
+.textBx span{
+    font-size: 50px;
+   
+}
 #video{
     justify-content: center;
     display: flex;
@@ -45,13 +58,10 @@ h2 {
     justify-content: center;
     display: flex; 
 }
-button{
-    width: 200px;
-    height: 75px;
-    border-radius: 25%;
-    background-color: #d67a23;
-}
 
+.ctx h1{
+    font-size: 60px;
+}
 /*header*/
 header ul li {
     position: relative;
@@ -108,12 +118,33 @@ header .logo{
     
     }
 /*fin header*/
-img{
+.imga{
     display: flex;
     margin: auto;
     width: 700px; 
     height: 625px;
-   
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite;
+}
+
+.ima{
+    
+    border-radius: 50%;
+    animation: float 6s ease-in-out infinite; 
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
 }
 
 h1{
@@ -175,6 +206,46 @@ h1{
     text-align: justify;
     
 }
+
+/*botones*/
+
+#descripc{
+   justify-content: center;
+   display: flex;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: -1px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    
+}
+
+.descrip span{
+    position: relative;
+    z-index: 2;
+    
+}
+.descrip svg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    fill: none;
+}
+.descrip{
+    width: 200px;
+    height: 75px;
+    border-radius: 25%;
+    background-color: #d67a23;
+    position:absolute;
+    justify-content: center;
+    margin:-26px;
+}
+
 .btn span{
     position: relative;
     z-index: 2;
@@ -250,9 +321,101 @@ section {
     color: #fff;
 }
 
-/*esto es la ventana*/
+/*efectos*/
+.descrip:hover{
+    background:  #d67a23;
+    box-shadow: 0 0 10px #d67a23,0 0 10px #d67a23,0 0 20px #d67a23;
+
+}
+.btn:hover{
+    background: #0de618;
+    box-shadow: 0 0 10px #0de618,0 0 10px #0de618,0 0 20px #0de618;
+}
 
 
+/*esto es la modal*/
+.flex{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textos{
+	padding:300px;
+	color:#fff;
+	text-align: center;
+}
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 30%;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: 1s;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+.close{
+	color: #f2f2f2;
+	font-size:40px;
+	font-weight: bold;
+    position: relative;
+    top: -28px;
+    left: 8px;
+}
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+.modal{
+	display: none;
+	position: fixed;
+	z-index:3;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+.modal-header, .footer{
+	padding: 8px 16px;
+	background: #15d1c2;
+	color:#f2f2f2;
+    border-left: 5px solid #000;
+    border-right: 5px solid #000; 
+    border-top: 5px solid #000; 
+}
+.modal-body{
+	padding: 20px 16px;
+    border-left: 5px solid #000;
+    border-bottom: 5px solid #000; 
+    border-right: 5px solid #000; 
+}
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}
+
+
+/*fin modal*/
 #Estrellas {
     width: 1px;
     height: 1px;
