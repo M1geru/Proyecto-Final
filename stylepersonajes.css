@@ -173,13 +173,28 @@ header .logo{
     display: flex;
     margin: 100px;
 }
-
+.cont {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 5px solid #41e6e6;
+    display: flex;
+}
 .bio{
-    background: #fff;
-    margin:20px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    border: 5px solid #000;
+    text-align: center;
+    position: relative;
+   
+    
     
 }
-
+.bio p{
+    font-size: 20px;
+}
 .imagenes{
     display: flex;
     justify-content: center;
@@ -191,6 +206,7 @@ header .logo{
     width: 300px;
     height: 300px;
     display: flex;
+    justify-content: center;
 }
 h1{
     color: #ffffff;
@@ -214,6 +230,9 @@ h1{
     
 }
 
+
+
+
 /*fin*/
 .contact {
     padding: 0;
@@ -235,12 +254,37 @@ section {
     color: #fff;
 }
 
+.img-bot{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    animation: float 6s ease-in-out infinite; 
+}
+
+
 /*efecttos*/
 .btn:hover{
     background: #0de618;
     box-shadow: 0 0 10px #0de618,0 0 10px #0de618,0 0 20px #0de618;
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
 #Estrellas {
     width: 1px;
     height: 1px;
