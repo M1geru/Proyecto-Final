@@ -54,6 +54,12 @@ h2 {
     display: flex;
 }
 
+.cont-bot{
+    justify-items: center;
+    display: flex;
+    margin: auto;
+}
+/*boton descripcion*/
 #descrip{
     justify-content: center;
     display: flex; 
@@ -132,6 +138,8 @@ header .logo{
     border-radius: 50%;
     animation: float 6s ease-in-out infinite; 
 }
+
+/*animacion de flotar*/
 @keyframes float {
 	0% {
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
@@ -249,9 +257,9 @@ a{
     height: 75px;
     border-radius: 25%;
     background-color: #d67a23;
-    position:absolute;
+    position:relative;
     justify-content: center;
-    margin:-26px;
+    margin:10px;
 }
 
 .btn span{
@@ -329,7 +337,7 @@ section {
     color: #fff;
 }
 
-/*efectos*/
+/*efectos boton descripcion*/
 .descrip:hover{
     background:  #d67a23;
     box-shadow: 0 0 10px #d67a23,0 0 10px #d67a23,0 0 20px #d67a23;
@@ -424,6 +432,8 @@ section {
 
 
 /*fin modal*/
+
+
 #Estrellas {
     width: 1px;
     height: 1px;
